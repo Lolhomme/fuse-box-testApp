@@ -6,7 +6,7 @@ const fuse = FuseBox.init({
   output: "dist/$name.js",
   target: 'browser@es5',
   useTypescriptCompiler: true,
-  allowSyntheticDefaultImports : true,
+  // allowSyntheticDefaultImports : true,
   polyfillNonStandardDefaultUsage: true,
   plugins: [
     VueComponentPlugin(),
@@ -18,5 +18,5 @@ const fuse = FuseBox.init({
 
 fuse.dev();
 fuse.bundle("bundle")
-  .instructions("> index.ts");
+  .instructions("> index.ts").hmr().watch();
 fuse.run();
