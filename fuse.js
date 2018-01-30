@@ -2,6 +2,7 @@ const path = require('path');
 const { FuseBox, VueComponentPlugin, CSSPlugin, SassPlugin, CSSResourcePlugin, WebIndexPlugin } = require("fuse-box");
 
 const fuse = FuseBox.init({
+  cache: true,
   homeDir: "src",
   output: "dist/$name.js",
   target: 'browser@es5',
@@ -18,5 +19,5 @@ const fuse = FuseBox.init({
 
 fuse.dev();
 fuse.bundle("bundle")
-  .instructions("> index.ts").hmr().watch();
+  .instructions("> index.ts").hmr({reload: true}).watch();
 fuse.run();
