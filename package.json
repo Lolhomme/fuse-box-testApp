@@ -1,0 +1,32 @@
+{
+  "name": "fusebox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node fuse.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "fuse-box": "^3.0.2"
+  },
+  "dependencies": {
+    "css-loader": "^0.28.9",
+    "moment": "^2.20.1",
+    "node": "^9.4.0",
+    "node-sass": "^4.7.2",
+    "postcss-selector-parser": "^3.1.1",
+    "typescript": "^2.6.2",
+    "uglify-es": "^3.3.9",
+    "uglify-js": "^3.3.9",
+    "vue": "^2.5.13",
+    "vue-class-component": "^6.1.2",
+    "vue-hot-reload-api": "^2.2.4",
+    "vue-template-compiler": "^2.5.13",
+    "vue-template-es2015-compiler": "^1.6.0",
+    "vuetype": "^0.2.2"
+  }
+}
